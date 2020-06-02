@@ -8,11 +8,11 @@ namespace TowerOfHanoi
 {
     class BL
     {
-        public static void MoveTower(int high, int colFrom, int colTo)
+        public void MoveTower(int high, int colFrom, int colTo)
         {
             if (high == 1)//Тривиальный случай
             {
-                UI.TrivialOccasion(colFrom, colTo);
+                UI.MoveDisk ( high, colFrom, colTo );
             }
             else
             {
